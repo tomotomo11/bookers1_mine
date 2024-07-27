@@ -1,3 +1,6 @@
+<div>
+  <%= flash[:notice] %>
+</div>
 <table>
   <tbody>
     <tr>
@@ -12,5 +15,5 @@
 </table>
 
 
-<%= link_to "Edit", "#" %>
+<%= link_to "Edit", edit_book_path(@book.id) %>
 <%= link_to "Back", books_path %>
